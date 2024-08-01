@@ -8,13 +8,15 @@ La página es responsiva (adaptable a diferentes tamaños de pantalla) e incluye
 
 [Proyecto desplegado (https://app.netlify.com/teams/dami-roma/sites)](https://app.netlify.com/teams/dami-roma/sites)
 
+[Mi portafolio (https://app.netlify.com/teams/dami-roma/sites)](https://exquisite-mooncake-1160bc.netlify.app/)
+
 ## Secciones de mi sitio
 
-![Presentación](assets/readme/1.png)
-![Habilidades](assets/readme/2.png)
-![Proyectos](assets/readme/3.png)
-![Testimonios](assets/readme/4.png)
-![Contacto](assets/readme/5.png)
+![Presentación](imagenes/readme/Presentación.PNG)
+![Habilidades](imagenes/readme/Habilidades.PNG)
+![Proyectos](imagenes/readme/Proyectos.PNG)
+![Testimonios](imagenes/readme/Testimonios.PNG)
+![Contacto](imagenes/readme/Contacto.PNG)
 
 ## Tecnologías
 
