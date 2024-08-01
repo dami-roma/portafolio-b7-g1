@@ -8,7 +8,7 @@ La página es responsiva (adaptable a diferentes tamaños de pantalla) e incluye
 
 [Proyecto desplegado (https://app.netlify.com/teams/dami-roma/sites)](https://app.netlify.com/teams/dami-roma/sites)
 
-[Mi portafolio (https://app.netlify.com/teams/dami-roma/sites)](https://exquisite-mooncake-1160bc.netlify.app/)
+Mi portafolio https://damarisromerotecnolochicaspro.netlify.app/
 
 ## Secciones de mi sitio
 
