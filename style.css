@@ -1,9 +1,124 @@
-#presentacion {
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #000000;
+}
+
+  #presentacion {
     height: 90vh;
     display: flex;
     justify-content: start;
     align-items: center;
+    background-image: url("imagenes/data.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .proyecto {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #proyecto-1 {
+    background-image: url('imagenes/google-coffee.gif');
+  
+  }
+
+  #proyecto-2 {
+    background-image: url('imagenes/data\ visualization.gif');
+    background-size: cover;
+  }
+
+  #proyecto-3 {
+    background-image: url('imagenes/data\ science.gif');
+    background-size: cover;
+  }
+
+  .text-shadow-1 {
+    text-shadow: -3px 0px 8px rgba(0, 0, 0, 1);
+  }
+
+  .text-shadow-2 {
+    text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+  }
+
+  .text-shadow-3 {
+    text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+  }
+
+  .texto-gigante {
+    font-size: 80px;
+  }
+
+  /* Estilo de letra Google font */
+  .monoton-regular {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.days-one-regular {
+  font-family: "Days One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
- body {
-   background-color: rgba(250, 128, 114, 0.336);
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }

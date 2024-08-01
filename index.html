@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dami ✿</title>
+
+    <!-- link de https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- Importante que los links de bootstrap esten antes del link de style.css -->
     <!-- link de https://getbootstrap.com/ -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,9 +24,9 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md bg-secondary" data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-md" style="background-color: #000000;">
             <div class="container">
-                <a class="navbar-brand text-white" href="#">dami ✿</a>
+                <a class="navbar-brand text-white poppins-medium" href="#">dami ✿</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,19 +35,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Yo</a>
+                            <a class="nav-link active text-white poppins-regular" aria-current="page" href="#">Yo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#habilidades">Habilidades</a>
+                            <a class="nav-link text-white poppins-regular" href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#proyectos">Proyectos</a>
+                            <a class="nav-link text-white poppins-regular" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#testimonios">Testimonios</a>
+                            <a class="nav-link text-white poppins-regular" href="#testimonios">Testimonios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#contacto">Contacto</a>
+                            <a class="nav-link text-white poppins-regular" href="#contacto">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#"></a>
@@ -49,94 +55,106 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                        <button class="btn btn-primary" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="pb-5">
 
-        <section id="presentacion"
-            class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="imagenes/gatito.webp"
-                        class="d-block mx-lg-auto img-fluid rounded-circle" alt="Bootstrap Themes" width="700" height="500"
-                        loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"> hola Li 🌷
-                    </h1>
-                    <p class="lead">Espero estes teniendo un buen día, mira que he aprendido...</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2">call me ❤ </button>
-                        <button type="button"
-                            class="btn btn-outline-secondary btn-lg px-4">mua mua mua</button>
+        <section id="presentacion" class="container-fluid">
+            <div class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                    </div>
+                    <div class="col-lg-9 p-3 rounded-4">
+                        <h1 id="app" class="display-4 fw-semibold text-white text-shadow-2 lh-2 mb-3"> Dami Romero ◰
+                        </h1>
+                        <p class="lead  text-white text-shadow-2"><strong>Apasionada por adquirir nuevas
+                                habilidades...</strong></p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn btn-success btn-lg px-4 me-md-2"> Contáctame</button>
+                            <button type="button" class="btn btn-outline-light btn-lg px-4">
+                                damaris.romero97@gmail.com</button>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section id="habilidades" class="container px-4 py-5">
             <!-- Título de mi sección -->
-            <h2 class="pb-2 border-bottom">Ideas para proximas citas</h2>
+            <h1 class="monoton-regular text-white my-5"> Habilidades </h1>
             <!-- Contenedor de mis cartas -->
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-danger bg-gradient fs-2 py-2 px-3 rounded">
-                        <i class="bi bi-film"></i>
+                        class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 py-2 px-3 rounded" style="background-color: #8102f8ea;">
+                        <i class="bi bi-search"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Ir al cine</h3>
-                    <p>ahora si veremos la pelicula, lo prometo 🤭 </p>
+                    <h3 class="mt-2 fs-2 poppins-semibold  text-white">Auditoría Interna</h3>
+                    <p class="text-white">• Evaluación de controles internos </p>
+                    <p class="text-white">• Análisis de Riesgos </p>
+                    <p class="text-white">• Metodologías de Auditoría </p>
+                    <p class="text-white">• Habilidades de Comunicación y Reporte </p>
+                    <p class="text-white">• Conocimiento de Normas y Regulaciones </p>
                 </div>
+
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-danger bg-gradient fs-2 py-2 px-3 rounded">
-                        <i class="bi bi-tree"></i>
+                        class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 py-2 px-3 rounded" style="background-color: #8102f8ea;" > 
+                        <i class="bi bi-bar-chart-line"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Acampar🌲</h3>
-                    <p>montañas + bosque + frío = perfecto para los abrazos...</p>
-                    <p> (づ￣ ³￣)づ </p>
+                    <h3 class="mt-2 fs-2 poppins-semibold  text-white ">Análisis de datos</h3>
+                    <p class="text-white">• Estadística Descriptiva  </p>
+                    <p class="text-white">• Análisis Exploratorio de Datos  </p>
+                    <p class="text-white">• Métodos de Modelado Predictivo  </p>
+                    <p class="text-white">• Limpieza y Preparación de Datos  </p>
+                    <p class="text-white">• Herramientas y Tecnologías de Análisis: MySQL, KNIME, Power BI  </p>
                 </div>
+
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-danger bg-gradient fs-2 py-2 px-3 rounded">
-                        <i class="bi bi-person-walking"></i>
+                        class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 py-2 px-3 rounded" style="background-color: #8102f8ea;">
+                        <i class="bi bi-shield-fill-check"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Pasear e ir por comida china</h3>
-                    <p>Me encanta la comida china 🍜💕</p>
+                    <h3 class="mt-2 fs-2 poppins-semibold  text-white">Gestión de riesgos</h3>
+                    <p class="text-white">• Seguridad industrial  </p>
+                    <p class="text-white">• Seguridad Patrimonial </p>
+                    <p class="text-white">• Sistemas de Gestión ISO: 9001, 14001, 45001 </p>
+                
                 </div>
+
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 py-2 px-3 rounded" style="background-color: #8102f8ea;">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="mt-2 fs-2 poppins-semibold  text-white">Desarrollo WEB</h3>
+                    <p class="text-white">• HTML y CSS </p>
+                    <p class="text-white">• JavaScript y Frameworks </p>
+                    <p class="text-white">• Principios de Diseño Responsivo y Accesibilidad </p>
+                
+                </div>
+
             </div>
         </section>
 
         <section id="proyectos" class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">En progreso</h2>
+            <h1 class="monoton-regular text-white my-5"> Proyectos </h1>
+            <!-- Al modificar lg-n cambaimos el numero de columnas (proyectos) que queremos por fila y agregamos breakpoints en función del tamaño de la pantalla desde donde se consulte la pagina-->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 align-items-stretch g-4 py-5">
 
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-1.jpg');">
+                    <div id="proyecto-1" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg"
+                        style="background-color: #2e12cc;">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pronto</h3>
+                            <h3 class="mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
                             <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
                                 <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>Earth</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>3d</small>
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="http://" target="_blank" class="ps-3">URL</a>
                                 </li>
                             </ul>
                         </div>
@@ -144,26 +162,14 @@
                 </div>
 
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-2.jpg');">
+                    <div id="proyecto-2" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg"
+                        style="background-color: #e60581;">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Muy pronto</h3>
+                            <h3 class=" mt-5 mb-4 display-6 lh-1 fw-bold">Pronto</h3>
                             <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
                                 <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>China</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>4d</small>
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="http://" target="_blank" class="ps-3">URL</a>
                                 </li>
                             </ul>
                         </div>
@@ -171,109 +177,96 @@
                 </div>
 
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-3.jpg');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Muy muy pronto</h3>
+                    <div id="proyecto-3" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg"
+                        style="background-color: #8003c9dc;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class=" mt-5 mb-4 display-6 lh-1 fw-bold">Pronto</h3>
                             <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
                                 <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>Leshan</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>5d</small>
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="http://" target="_blank" class="ps-3">URL</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <section id="testimonios">
-            <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                        aria-label="Slide 1" aria-current="true"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                        class=""></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                        class=""></button>
-                </div>
+        <section id="testimonios" class="container px-4 py-3">
+            <h1 class="monoton-regular text-white text-center my-5"> Testimonios </h1>
+            <div id="myCarousel" class="carousel carousel-dark slide mb-6 " data-bs-theme="dark"
+                data-bs-ride="carousel">
+
                 <div class="carousel-inner">
+
                     <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                    carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">gatitos</a></p>
-                            </div>
-                        </div>
+                        <article class="container text-center">
+                            <img class="rounded-5" src="imagenes/love.gif" height="200" alt="Lady Bird">
+                            <h3 class="text-white my-3">Lady Love</h3>
+                            <p class="text-white">"A dami le gusto mucho el curso de desarrollo web"</p>
+                        </article>
                     </div>
+
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Another example headline.</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">perritos</a></p>
-                            </div>
-                        </div>
+                        <article class="container text-center">
+                            <img class="rounded-5" src="imagenes/lady and cat.jpg" height="200" alt="Lady Bug">
+                            <h3 class="text-white my-3">Lady Cat</h3>
+                            <p class="text-white">"A dami le gustan los gatitos"</p>
+                        </article>
                     </div>
+
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">conejitos</a></p>
-                            </div>
-                        </div>
+                        <article class="container text-center">
+                            <img class="rounded-5" src="imagenes/lady bunny.jpg" height="200" alt="Lady Bunny">
+                            <h3 class=" text-white my-3">Lady Bunny</h3>
+                            <p class="text-white">"A dami le gustan los rabbits con sombrero"</p>
+                        </article>
                     </div>
+
+
                 </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class=" visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button class=" text-white  carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class=" carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class=" visually-hidden">Next</span>
                 </button>
+
             </div>
         </section>
 
     </main>
 
-
-    <footer id="contacto" class="py-3 my-4">
+    <footer id="contacto" class="py-3 mt-5" data-bs-theme="bg-secondary">
+        <p class="mt-2 text-white text-center texto-gigante">
+            <i class="bi bi-flower1"></i>
+        </p>
+        <h4 id="frase" class="text-white text-center mb-5">"The best way to predict the future is to
+            invent it." - Alan Kay</h4>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item fs-1 ">
+                <a href="https://github.com/dami-roma" target="_blank" class="nav-link px-5 text-body-secondary">
+                    <i class="bi bi-github text-white"></i>
+                </a>
+            </li>
+            <li class="nav-item fs-1">
+                <a href="https://www.linkedin.com/in/damaris-romero-manzano/" target="_blank"
+                    class="nav-link px-5 text-body-secondary">
+                    <i class="bi bi-linkedin text-white"></i>
+                </a>
+            </li>
+            <li class="nav-item fs-1 ">
+                <a href="https:" target="_blank" class="nav-link px-5 text-body-secondary">
+                    <i class="bi bi-instagram text-white"></i>
+                </a>
+            </li>
         </ul>
-        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        <p class="text-center text-white">© 2024 Damaris, TECNOLOCHICAS PRO</p>
     </footer>
 
     <!-- link de https://getbootstrap.com/ -->
@@ -281,6 +274,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- link de Typewriter para escribir lindo mi nombre-->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- link de https://getbootstrap.com/ El script personal va al último de todos-->
+    <script src="script.js"></script>
 </body>
 
 </html>
